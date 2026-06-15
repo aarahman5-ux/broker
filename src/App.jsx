@@ -3,6 +3,7 @@ import Navbar from './components/Navbar';
 import Showroom from './components/Showroom';
 import ClientPortals from './components/ClientPortals';
 import BrokersDesk from './components/BrokersDesk';
+import HeroSlider from './components/HeroSlider';
 import { defaultInventory, mockLeads } from './data/defaultInventory';
 
 function App() {
@@ -155,116 +156,9 @@ function App() {
                 </div>
               </div>
 
-              {/* Right Column: Framed Hero Image Showcase with floating widgets */}
-              <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center' }}>
-                
-                {/* Floating Widget 1 */}
-                <div style={{
-                  position: 'absolute',
-                  top: '-15px',
-                  right: '10px',
-                  padding: '12px 18px',
-                  background: 'rgba(255, 255, 255, 0.85)',
-                  border: '1px solid var(--border-color)',
-                  borderRadius: '6px',
-                  backdropFilter: 'blur(10px)',
-                  boxShadow: 'var(--shadow-premium)',
-                  animation: 'floatCard 8s infinite ease-in-out',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  zIndex: 5
-                }}>
-                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#059669', boxShadow: '0 0 10px #059669' }} />
-                  <div>
-                    <div style={{ fontSize: '0.55rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '800', letterSpacing: '0.5px' }}>Latest Sourced</div>
-                    <div style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--text-primary)' }}>GR Supra & NSX</div>
-                  </div>
-                </div>
-
-                {/* Floating Widget 2 */}
-                <div style={{
-                  position: 'absolute',
-                  bottom: '-15px',
-                  left: '10px',
-                  padding: '12px 18px',
-                  background: 'rgba(255, 255, 255, 0.85)',
-                  border: '1px solid var(--border-color)',
-                  borderRadius: '6px',
-                  backdropFilter: 'blur(10px)',
-                  boxShadow: 'var(--shadow-premium)',
-                  animation: 'floatCard 10s infinite ease-in-out -3s',
-                  display: 'flex',
-                  alignItems: 'center',
-                  gap: '10px',
-                  zIndex: 5
-                }}>
-                  <div style={{
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '4px',
-                    background: 'rgba(184, 157, 124, 0.12)',
-                    border: '1px solid var(--accent-gold)',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center'
-                  }}>
-                    <span style={{ color: 'var(--accent-gold-dark)', fontSize: '0.7rem', fontWeight: '800' }}>$</span>
-                  </div>
-                  <div>
-                    <div style={{ fontSize: '0.55rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '800', letterSpacing: '0.5px' }}>Brokerage Fee</div>
-                    <div style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--text-primary)' }}>Flat 2.5% Sourcing</div>
-                  </div>
-                </div>
-
-                {/* Primary Framed Image Showcase */}
-                <div style={{
-                  width: '100%',
-                  height: '350px',
-                  borderRadius: '12px',
-                  border: '1px solid var(--border-color)',
-                  boxShadow: 'var(--shadow-premium)',
-                  overflow: 'hidden',
-                  background: '#ffffff',
-                  padding: '12px',
-                  transform: 'rotate(-1.5deg)',
-                  cursor: 'pointer'
-                }}
-                className="hero-image-frame"
-                >
-                  <div style={{
-                    width: '100%',
-                    height: '100%',
-                    borderRadius: '6px',
-                    overflow: 'hidden',
-                    position: 'relative'
-                  }}>
-                    <img 
-                      src="/images/hero_car_banner.png" 
-                      alt="Luxury Car lineup" 
-                      style={{
-                        width: '100%',
-                        height: '100%',
-                        objectFit: 'cover'
-                      }}
-                    />
-                    <div style={{
-                      position: 'absolute',
-                      top: 0, left: 0, right: 0, bottom: 0,
-                      background: 'linear-gradient(to top, rgba(30, 37, 43, 0.2) 0%, transparent 60%)'
-                    }} />
-                  </div>
-                </div>
-
-              </div>
+              {/* Right Column: Framed Hero Image Showcase with sliding carousel */}
+              <HeroSlider />
             </div>
-
-            <style>{`
-              @keyframes floatCard {
-                0%, 100% { transform: translateY(0) rotate(0deg); }
-                50% { transform: translateY(-12px) rotate(1deg); }
-              }
-            `}</style>
 
             {/* Our Services Section */}
             <div style={{ padding: '80px 0', borderTop: '1px solid var(--border-color)' }}>
