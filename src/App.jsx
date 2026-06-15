@@ -204,12 +204,12 @@ function App() {
                     width: '50px',
                     height: '50px',
                     borderRadius: '6px',
-                    background: 'rgba(240, 135, 135, 0.1)',
+                    background: 'rgba(60, 156, 210, 0.1)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     marginBottom: '1.5rem',
-                    border: '1px solid rgba(240, 135, 135, 0.2)'
+                    border: '1px solid rgba(60, 156, 210, 0.2)'
                   }}>
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold-dark)" strokeWidth="2">
                       <rect x="1" y="3" width="15" height="13" />
@@ -255,7 +255,7 @@ function App() {
             <div style={{
               padding: '60px',
               borderRadius: '12px',
-              background: 'linear-gradient(135deg, rgba(240, 135, 135, 0.04), rgba(74, 92, 104, 0.04))',
+              background: 'linear-gradient(135deg, rgba(60, 156, 210, 0.04), rgba(74, 92, 104, 0.04))',
               border: '1px solid var(--border-color)',
               marginBottom: '80px',
               display: 'grid',
@@ -283,7 +283,7 @@ function App() {
                         width: '20px',
                         height: '20px',
                         borderRadius: '50%',
-                        background: 'rgba(240, 135, 135, 0.1)',
+                        background: 'rgba(60, 156, 210, 0.1)',
                         border: '1px solid var(--accent-gold)',
                         display: 'flex',
                         alignItems: 'center',

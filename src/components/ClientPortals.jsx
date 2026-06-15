@@ -192,13 +192,13 @@ export default function ClientPortals({ onSellerSubmit, onBuyerSubmit }) {
                 width: '70px',
                 height: '70px',
                 borderRadius: '50%',
-                background: 'rgba(240, 135, 135, 0.1)',
+                background: 'rgba(60, 156, 210, 0.1)',
                 display: 'flex',
                 alignItems: 'center',
                 justifyContent: 'center',
                 margin: '0 auto 1.5rem auto',
                 border: '1px solid var(--accent-gold)',
-                boxShadow: '0 4px 15px rgba(240, 135, 135, 0.2)'
+                boxShadow: '0 4px 15px rgba(60, 156, 210, 0.2)'
               }}>
                 <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-gold-dark)" strokeWidth="2.5">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
@@ -242,7 +242,7 @@ export default function ClientPortals({ onSellerSubmit, onBuyerSubmit }) {
                       type="button"
                       onClick={() => setSellCategory(cat.id)}
                       style={{
-                        background: sellCategory === cat.id ? 'rgba(240, 135, 135, 0.1)' : '#fcfbfa',
+                        background: sellCategory === cat.id ? 'rgba(60, 156, 210, 0.1)' : '#fcfbfa',
                         border: '1px solid',
                         borderColor: sellCategory === cat.id ? 'var(--accent-gold)' : 'var(--border-color)',
                         color: sellCategory === cat.id ? 'var(--accent-gold-dark)' : 'var(--text-secondary)',

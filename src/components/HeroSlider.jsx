@@ -147,7 +147,7 @@ function HeroSlider() {
           width: '24px',
           height: '24px',
           borderRadius: '4px',
-          background: 'rgba(240, 135, 135, 0.12)',
+          background: 'rgba(60, 156, 210, 0.12)',
           border: '1px solid var(--accent-gold)',
           display: 'flex',
           alignItems: 'center',

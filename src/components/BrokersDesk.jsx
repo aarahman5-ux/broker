@@ -79,7 +79,7 @@ export default function BrokersDesk({
           </h2>
         </div>
         <div style={{
-          background: 'rgba(240, 135, 135, 0.12)',
+          background: 'rgba(60, 156, 210, 0.12)',
           border: '1px solid var(--accent-gold)',
           padding: '8px 18px',
           borderRadius: '6px',

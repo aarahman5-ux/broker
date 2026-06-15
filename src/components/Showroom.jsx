@@ -46,7 +46,7 @@ export function AssetVisual({ type, animated = false }) {
         position: 'absolute',
         width: '120%',
         height: '100%',
-        background: 'radial-gradient(ellipse at center, rgba(240, 135, 135, 0.15) 0%, transparent 65%)',
+        background: 'radial-gradient(ellipse at center, rgba(60, 156, 210, 0.15) 0%, transparent 65%)',
         top: '-20%',
         left: '-10%',
         pointerEvents: 'none'
@@ -66,8 +66,8 @@ export function AssetVisual({ type, animated = false }) {
               <stop offset="100%" stopColor="#35434d" />
             </linearGradient>
             <linearGradient id="glowGrad" x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor="#f08787" stopOpacity="0.4" />
-              <stop offset="100%" stopColor="#f08787" stopOpacity="0" />
+              <stop offset="0%" stopColor="#3c9cd2" stopOpacity="0.4" />
+              <stop offset="100%" stopColor="#3c9cd2" stopOpacity="0" />
             </linearGradient>
           </defs>
           <rect width="400" height="200" fill="url(#skyGrad)" />
@@ -105,7 +105,7 @@ export function AssetVisual({ type, animated = false }) {
               <stop offset="0%" stopColor="#f5ebe0" />
               <stop offset="50%" stopColor="#f3d5b5" />
               <stop offset="90%" stopColor="#e8ac65" />
-              <stop offset="100%" stopColor="#f08787" />
+              <stop offset="100%" stopColor="#3c9cd2" />
             </linearGradient>
             <linearGradient id="seaGrad" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#678d9f" />
@@ -121,7 +121,7 @@ export function AssetVisual({ type, animated = false }) {
           <g transform="translate(45, 85)">
             <rect x="0" y="0" width="115" height="48" fill="#ffffff" rx="2" />
             <rect x="12" y="8" width="90" height="40" fill="#35434d" />
-            <rect x="8" y="40" width="98" height="8" fill="#f08787" />
+            <rect x="8" y="40" width="98" height="8" fill="#3c9cd2" />
             <rect x="5" y="-12" width="85" height="12" fill="#ffffff" opacity="0.9" />
             <rect x="12" y="-8" width="65" height="8" fill="#aedbf2" opacity="0.7" />
             {/* Pool */}
@@ -142,8 +142,8 @@ export function AssetVisual({ type, animated = false }) {
               <stop offset="100%" stopColor="#4a5c68" />
             </linearGradient>
             <linearGradient id="goldBar" x1="0" y1="0" x2="1" y2="0">
-              <stop offset="0%" stopColor="#f08787" />
-              <stop offset="100%" stopColor="#ffc7a7" />
+              <stop offset="0%" stopColor="#3c9cd2" />
+              <stop offset="100%" stopColor="#6c80a5" />
             </linearGradient>
           </defs>
           <rect width="400" height="200" fill="#e3e1d9" />
@@ -163,9 +163,9 @@ export function AssetVisual({ type, animated = false }) {
             {/* Wheels */}
             <circle cx="70" cy="92" r="24" fill="#1b2329" />
             <circle cx="220" cy="92" r="24" fill="#1b2329" />
-            <circle cx="70" cy="92" r="20" fill="#4a5c68" stroke="#f08787" strokeWidth="2" />
+            <circle cx="70" cy="92" r="20" fill="#4a5c68" stroke="#3c9cd2" strokeWidth="2" />
             <circle cx="70" cy="92" r="8" fill="#1b2329" />
-            <circle cx="220" cy="92" r="20" fill="#4a5c68" stroke="#f08787" strokeWidth="2" />
+            <circle cx="220" cy="92" r="20" fill="#4a5c68" stroke="#3c9cd2" strokeWidth="2" />
             <circle cx="220" cy="92" r="8" fill="#1b2329" />
             {/* Light beam */}
             <path d="M275 80 Q320 85 350 95" stroke="#fef08a" strokeWidth="4" opacity="0.6" filter="blur(6px)" />
@@ -191,13 +191,13 @@ export function AssetVisual({ type, animated = false }) {
             {/* Cabin */}
             <path d="M100 48 C120 48, 160 48, 185 60 L90 60 Z" fill="#1b2329" />
             {/* Wheels */}
-            <circle cx="75" cy="80" r="22" fill="#1b2329" stroke="#f08787" strokeWidth="1.5" />
-            <circle cx="235" cy="80" r="22" fill="#1b2329" stroke="#f08787" strokeWidth="1.5" />
+            <circle cx="75" cy="80" r="22" fill="#1b2329" stroke="#3c9cd2" strokeWidth="1.5" />
+            <circle cx="235" cy="80" r="22" fill="#1b2329" stroke="#3c9cd2" strokeWidth="1.5" />
             <circle cx="75" cy="80" r="6" fill="#fef08a" />
             <circle cx="235" cy="80" r="6" fill="#fef08a" />
           </g>
           {/* Line highlight */}
-          <path d="M0 140 L400 140" stroke="rgba(240, 135, 135, 0.2)" strokeWidth="1" />
+          <path d="M0 140 L400 140" stroke="rgba(60, 156, 210, 0.2)" strokeWidth="1" />
         </svg>
       )}
 
@@ -212,7 +212,7 @@ export function AssetVisual({ type, animated = false }) {
             <linearGradient id="hullGrad" x1="0" y1="0" x2="1" y2="0">
               <stop offset="0%" stopColor="#ffffff" />
               <stop offset="80%" stopColor="#f1efe9" />
-              <stop offset="100%" stopColor="#f08787" />
+              <stop offset="100%" stopColor="#3c9cd2" />
             </linearGradient>
           </defs>
           <rect width="400" height="200" fill="url(#skyGold)" />
@@ -225,7 +225,7 @@ export function AssetVisual({ type, animated = false }) {
             <path d="M10 55 L220 50 C260 50, 270 58, 280 68 L25 68 Z" fill="url(#hullGrad)" />
             <path d="M0 65 L270 65 L250 82 L15 82 Z" fill="#35434d" />
             {/* Gold stripe */}
-            <path d="M22 67 L265 67" stroke="#f08787" strokeWidth="2" />
+            <path d="M22 67 L265 67" stroke="#3c9cd2" strokeWidth="2" />
           </g>
           {/* Waves */}
           <path d="M0 160 Q50 152 100 160 T200 160 T300 160 T400 160 L400 200 L0 200 Z" fill="#1b2329" />
@@ -239,36 +239,36 @@ export function AssetVisual({ type, animated = false }) {
             <radialGradient id="watchDial" cx="50%" cy="50%" r="50%">
               <stop offset="70%" stopColor="#ffffff" />
               <stop offset="90%" stopColor="#f8f7f4" />
-              <stop offset="100%" stopColor="#f08787" />
+              <stop offset="100%" stopColor="#3c9cd2" />
             </radialGradient>
           </defs>
           <rect width="400" height="200" fill="#e3e1d9" />
           {/* Watch strap */}
           <rect x="170" y="10" width="60" height="180" fill="#2b353e" rx="4" stroke="#1e252b" strokeWidth="1" />
           {/* Watch case */}
-          <circle cx="200" cy="100" r="65" fill="url(#watchDial)" stroke="#f08787" strokeWidth="3" />
+          <circle cx="200" cy="100" r="65" fill="url(#watchDial)" stroke="#3c9cd2" strokeWidth="3" />
           {/* Notches */}
           {[0, 30, 60, 90, 120, 150, 180, 210, 240, 270, 300, 330].map((deg) => (
             <g key={deg} transform={`rotate(${deg} 200 100)`}>
-              <line x1="200" y1="40" x2="200" y2="48" stroke="#f08787" strokeWidth="2" />
+              <line x1="200" y1="40" x2="200" y2="48" stroke="#3c9cd2" strokeWidth="2" />
             </g>
           ))}
           {/* Gears */}
-          <circle cx="185" cy="110" r="18" fill="none" stroke="#f08787" strokeWidth="1.5" strokeDasharray="3 2" opacity="0.6" />
+          <circle cx="185" cy="110" r="18" fill="none" stroke="#3c9cd2" strokeWidth="1.5" strokeDasharray="3 2" opacity="0.6" />
           <circle cx="212" cy="90" r="22" fill="none" stroke="#8c7867" strokeWidth="1" strokeDasharray="3 3" opacity="0.6" />
           {/* Hands */}
           <line x1="200" y1="100" x2="200" y2="60" stroke="#1e252b" strokeWidth="3" strokeLinecap="round" />
           <line x1="200" y1="100" x2="230" y2="110" stroke="#1e252b" strokeWidth="2.5" strokeLinecap="round" />
-          <line x1="200" y1="100" x2="180" y2="120" stroke="#f08787" strokeWidth="1.5" strokeLinecap="round" />
+          <line x1="200" y1="100" x2="180" y2="120" stroke="#3c9cd2" strokeWidth="1.5" strokeLinecap="round" />
           {/* Pin */}
-          <circle cx="200" cy="100" r="4" fill="#f08787" />
+          <circle cx="200" cy="100" r="4" fill="#3c9cd2" />
         </svg>
       )}
 
       {!isPorsche && !isFerrari && !isPenthouse && !isVilla && !isYacht && !isWatch && (
         <svg width="100%" height="100%" viewBox="0 0 400 200" fill="none" xmlns="http://www.w3.org/2000/svg">
           <rect width="400" height="200" fill="#eae8e1" />
-          <rect x="120" y="60" width="160" height="80" rx="4" fill="#ffffff" stroke="#f08787" strokeWidth="2" />
+          <rect x="120" y="60" width="160" height="80" rx="4" fill="#ffffff" stroke="#3c9cd2" strokeWidth="2" />
           <text x="200" y="105" fill="#1e252b" fontSize="14" fontWeight="600" textAnchor="middle">EXCLUSIVE ASSET</text>
         </svg>
       )}
