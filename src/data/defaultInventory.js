@@ -1,5 +1,105 @@
 export const defaultInventory = [
   {
+    id: "toyota-1",
+    category: "cars",
+    title: "Toyota Supra GR Edition",
+    description: "The latest GR Supra in Absolute Zero White spec. Track-tuned suspension, active rear differential, Brembo performance brakes, and premium alcantara carbon bucket seats.",
+    price: 585000,
+    commissionRate: 4.0,
+    brokerNote: "Mint condition collector-grade Supra. Single private owner, garage kept, fully stock with zero modifications. Hand-delivered to our storage.",
+    status: "available",
+    image: "toyota_supra",
+    specs: {
+      "Year": "2025",
+      "Mileage": "120 mi",
+      "Engine": "3.0L Twin-Scroll Turbo I6",
+      "Transmission": "6-Speed Manual",
+      "Color": "Absolute Zero White",
+      "Power": "382 hp"
+    },
+    sellerInfo: {
+      name: "Arthur Pendelton",
+      phone: "+1 (555) 234-5678",
+      email: "arthur@pendelton.net",
+      dateSubmitted: "2026-06-12"
+    }
+  },
+  {
+    id: "honda-1",
+    category: "cars",
+    title: "Honda NSX Type S",
+    description: "Limited production Type S supercar (1 of 350 globally). Finished in Gotham Gray Matte with carbon fiber exterior aerodynamics package and carbon-ceramic brakes.",
+    price: 172000,
+    commissionRate: 4.5,
+    brokerNote: "Extremely rare hybrid hypercar spec. Certified inspect record from Honda performance center. Global delivery support included.",
+    status: "available",
+    image: "honda_nsx",
+    specs: {
+      "Year": "2024",
+      "Mileage": "450 mi",
+      "Engine": "3.5L Twin-Turbo V6 Hybrid",
+      "Transmission": "9-Speed Dual-Clutch",
+      "Color": "Gotham Gray Matte",
+      "Power": "600 hp"
+    },
+    sellerInfo: {
+      name: "Sophia Chen",
+      phone: "+852 9182 7364",
+      email: "sophia.chen@hkluxury.com",
+      dateSubmitted: "2026-06-14"
+    }
+  },
+  {
+    id: "suzuki-1",
+    category: "cars",
+    title: "Suzuki Swift Sport Hybrid",
+    description: "Champion hot hatch with 48V mild-hybrid Boosterjet engine. Finished in high-gloss Burning Red Metallic, lightweight alloy rims, and sports exhaust.",
+    price: 280000,
+    commissionRate: 5.0,
+    brokerNote: "Highly agile daily driver. Sourced directly from a Suzuki enthusiast client. Complete service records, pristine mechanicals.",
+    status: "available",
+    image: "suzuki_swift",
+    specs: {
+      "Year": "2024",
+      "Mileage": "2,100 mi",
+      "Engine": "1.4L Boosterjet Turbo",
+      "Transmission": "6-Speed Manual",
+      "Color": "Burning Red Metallic",
+      "Power": "138 hp"
+    },
+    sellerInfo: {
+      name: "Viktor Vancamp",
+      phone: "+32 475 92 81 02",
+      email: "viktor.v@vancamp.be",
+      dateSubmitted: "2026-06-13"
+    }
+  },
+  {
+    id: "mercedes-1",
+    category: "cars",
+    title: "Mercedes-AMG G63",
+    description: "The ultimate luxury off-roader in Designo Night Black Magno. Features AMG Night Package, 22-inch forged cross-spoke wheels, and exclusive red-pepper carbon interior trim.",
+    price: 185000,
+    commissionRate: 4.0,
+    brokerNote: "Highly optioned AMG G63. Factory matte black finish, clean history, single executive owner. Trade-in valuation available.",
+    status: "available",
+    image: "mercedes_g63",
+    specs: {
+      "Year": "2024",
+      "Mileage": "3,500 mi",
+      "Engine": "4.0L Twin-Turbo V8",
+      "Transmission": "9-Speed Automatic",
+      "Color": "Night Black Magno",
+      "Power": "577 hp"
+    },
+    sellerInfo: {
+      name: "Marcus Vance",
+      phone: "+1 (555) 019-2834",
+      email: "marcus@vanceholdings.com",
+      dateSubmitted: "2026-06-10"
+    }
+  },
+  {
     id: "apt-1",
     category: "apartments",
     title: "Skyline Penthouse Loft",
@@ -25,31 +125,6 @@ export const defaultInventory = [
     }
   },
   {
-    id: "car-1",
-    category: "cars",
-    title: "Porsche 911 GT3 RS",
-    description: "Finished in bespoke Paint-to-Sample Crayon with Weissach Package. Active aerodynamics, lightweight carbon fiber monocoque parts, and track-ready suspension calibration.",
-    price: 312000,
-    commissionRate: 4.0,
-    brokerNote: "Single-owner collector vehicle with complete service records. Hard to find in this spec. Sourced directly from a private garage in Stuttgart.",
-    status: "available",
-    image: "porsche",
-    specs: {
-      "Year": "2024",
-      "Mileage": "1,240 mi",
-      "Engine": "4.0L Flat-6",
-      "Transmission": "7-Speed PDK",
-      "Color": "PTS Crayon",
-      "Power": "518 hp"
-    },
-    sellerInfo: {
-      name: "Elena Rostova",
-      phone: "+49 89 201938",
-      email: "e.rostova@icloud.com",
-      dateSubmitted: "2026-06-01"
-    }
-  },
-  {
     id: "apt-2",
     category: "apartments",
     title: "Waterfront Cliffside Villa",
@@ -72,31 +147,6 @@ export const defaultInventory = [
       phone: "+39 02 8374 9283",
       email: "rossi.giovanni@rossi-estates.it",
       dateSubmitted: "2026-04-22"
-    }
-  },
-  {
-    id: "car-2",
-    category: "cars",
-    title: "Ferrari SF90 Stradale",
-    description: "Assetto Fiorano specification hybrid hypercar. Exterior in Rosso Corsa with black roof, carbon fiber racing seats, and titanium exhaust system.",
-    price: 545000,
-    commissionRate: 4.5,
-    brokerNote: "Currently stored in climate-controlled facility. Fully inspected by Ferrari technicians. We assist with global delivery and tax clearance.",
-    status: "available",
-    image: "ferrari",
-    specs: {
-      "Year": "2023",
-      "Mileage": "850 mi",
-      "Engine": "4.0L Twin-Turbo V8 Hybrid",
-      "Transmission": "8-Speed Dual-Clutch",
-      "Color": "Rosso Corsa",
-      "Power": "986 hp"
-    },
-    sellerInfo: {
-      name: "Klaus Werner",
-      phone: "+41 44 928 3829",
-      email: "kwerner@swisswealth.ch",
-      dateSubmitted: "2026-05-30"
     }
   },
   {
@@ -155,12 +205,12 @@ export const mockLeads = [
   {
     id: "lead-1",
     type: "inquiry",
-    itemId: "car-1",
-    itemTitle: "Porsche 911 GT3 RS",
+    itemId: "toyota-1",
+    itemTitle: "Toyota Supra GR Edition",
     clientName: "David Cole",
     clientEmail: "david@cole-cap.com",
     clientPhone: "+1 (555) 438-9201",
-    message: "Interested in the PTS Crayon Porsche. Is it possible to arrange a private viewing in Los Angeles next Thursday? I have pre-approved funds.",
+    message: "Interested in the GR Supra. Is it possible to arrange a private viewing in Los Angeles next Thursday? I have pre-approved funds.",
     status: "unread",
     date: "2026-06-13"
   },

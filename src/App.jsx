@@ -135,82 +135,127 @@ function App() {
           <div className="animate-fade-in" style={{ maxWidth: '1200px', margin: '0 auto', padding: '20px' }}>
             {/* Hero Section */}
             <div className="hero-container">
-              {/* Floating animated layer widgets (Warm light styling) */}
-              <div style={{
-                position: 'absolute',
-                top: '15%',
-                right: '5%',
-                padding: '16px 20px',
-                background: 'rgba(255, 255, 255, 0.75)',
-                border: '1px solid var(--border-color)',
-                borderRadius: '8px',
-                backdropFilter: 'blur(10px)',
-                boxShadow: 'var(--shadow-premium)',
-                animation: 'floatCard 8s infinite ease-in-out',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                pointerEvents: 'none',
-                zIndex: 5
-              }}>
-                <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#059669', boxShadow: '0 0 10px #059669' }} />
-                <div>
-                  <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '700' }}>Active Mandates</div>
-                  <div style={{ fontSize: '0.82rem', fontWeight: '700', color: 'var(--text-primary)' }}>Porsche 911 GT3 RS</div>
+              {/* Left Column: Core Hero Content */}
+              <div>
+                <span className="hero-subtitle">Bespoke Acquisition & Disinvestment</span>
+                <h1 className="hero-title serif-text" style={{ fontSize: 'clamp(2.3rem, 4.5vw, 3.8rem)', marginBottom: '1.25rem', textAlign: 'left' }}>
+                  Your Strategic Partner in <br />
+                  High-Value Brokerage
+                </h1>
+                <p className="hero-description" style={{ margin: '0 0 2rem 0', maxWidth: 'none', textAlign: 'left' }}>
+                  We represent discerning clients seeking to buy or sell premium real estate, exotic automobiles, yachts, and luxury collectibles. Leveraging deep network intelligence, we secure transactions with absolute discretion and pricing efficiency.
+                </p>
+                <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap' }}>
+                  <button className="btn-gold" onClick={() => setActiveTab('showroom')}>
+                    Explore Showroom
+                  </button>
+                  <button className="btn-secondary" onClick={() => setActiveTab('client-portal')}>
+                    Retain Our Services
+                  </button>
                 </div>
               </div>
 
-              <div style={{
-                position: 'absolute',
-                bottom: '15%',
-                left: '5%',
-                padding: '16px 20px',
-                background: 'rgba(255, 255, 255, 0.75)',
-                border: '1px solid var(--border-color)',
-                borderRadius: '8px',
-                backdropFilter: 'blur(10px)',
-                boxShadow: 'var(--shadow-premium)',
-                animation: 'floatCard 10s infinite ease-in-out -3s',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '12px',
-                pointerEvents: 'none',
-                zIndex: 5
-              }}>
+              {/* Right Column: Framed Hero Image Showcase with floating widgets */}
+              <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center' }}>
+                
+                {/* Floating Widget 1 */}
                 <div style={{
-                  width: '32px',
-                  height: '32px',
-                  borderRadius: '4px',
-                  background: 'rgba(184, 157, 124, 0.12)',
-                  border: '1px solid var(--accent-gold)',
+                  position: 'absolute',
+                  top: '-15px',
+                  right: '10px',
+                  padding: '12px 18px',
+                  background: 'rgba(255, 255, 255, 0.85)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: '6px',
+                  backdropFilter: 'blur(10px)',
+                  boxShadow: 'var(--shadow-premium)',
+                  animation: 'floatCard 8s infinite ease-in-out',
                   display: 'flex',
                   alignItems: 'center',
-                  justifyContent: 'center'
+                  gap: '10px',
+                  zIndex: 5
                 }}>
-                  <span style={{ color: 'var(--accent-gold-dark)', fontSize: '0.75rem', fontWeight: '800' }}>$</span>
+                  <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: '#059669', boxShadow: '0 0 10px #059669' }} />
+                  <div>
+                    <div style={{ fontSize: '0.55rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '800', letterSpacing: '0.5px' }}>Latest Sourced</div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--text-primary)' }}>GR Supra & NSX</div>
+                  </div>
                 </div>
-                <div>
-                  <div style={{ fontSize: '0.62rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '700' }}>Brokerage Fee</div>
-                  <div style={{ fontSize: '0.82rem', fontWeight: '700', color: 'var(--text-primary)' }}>Flat 2.5% on Estates</div>
-                </div>
-              </div>
 
-              {/* Core Hero Content */}
-              <span className="hero-subtitle">Bespoke Acquisition & Disinvestment</span>
-              <h1 className="hero-title serif-text">
-                Your Strategic Partner in <br />
-                High-Value Brokerage
-              </h1>
-              <p className="hero-description">
-                We represent discerning clients seeking to buy or sell premium real estate, exotic automobiles, yachts, and luxury collectibles. Leveraging deep network intelligence, we secure transactions with absolute discretion and pricing efficiency.
-              </p>
-              <div style={{ display: 'flex', gap: '12px', flexWrap: 'wrap', justifyContent: 'center' }}>
-                <button className="btn-gold" onClick={() => setActiveTab('showroom')}>
-                  Explore Showroom
-                </button>
-                <button className="btn-secondary" onClick={() => setActiveTab('client-portal')}>
-                  Retain Our Services
-                </button>
+                {/* Floating Widget 2 */}
+                <div style={{
+                  position: 'absolute',
+                  bottom: '-15px',
+                  left: '10px',
+                  padding: '12px 18px',
+                  background: 'rgba(255, 255, 255, 0.85)',
+                  border: '1px solid var(--border-color)',
+                  borderRadius: '6px',
+                  backdropFilter: 'blur(10px)',
+                  boxShadow: 'var(--shadow-premium)',
+                  animation: 'floatCard 10s infinite ease-in-out -3s',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '10px',
+                  zIndex: 5
+                }}>
+                  <div style={{
+                    width: '24px',
+                    height: '24px',
+                    borderRadius: '4px',
+                    background: 'rgba(184, 157, 124, 0.12)',
+                    border: '1px solid var(--accent-gold)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                  }}>
+                    <span style={{ color: 'var(--accent-gold-dark)', fontSize: '0.7rem', fontWeight: '800' }}>$</span>
+                  </div>
+                  <div>
+                    <div style={{ fontSize: '0.55rem', textTransform: 'uppercase', color: 'var(--text-muted)', fontWeight: '800', letterSpacing: '0.5px' }}>Brokerage Fee</div>
+                    <div style={{ fontSize: '0.75rem', fontWeight: '800', color: 'var(--text-primary)' }}>Flat 2.5% Sourcing</div>
+                  </div>
+                </div>
+
+                {/* Primary Framed Image Showcase */}
+                <div style={{
+                  width: '100%',
+                  height: '350px',
+                  borderRadius: '12px',
+                  border: '1px solid var(--border-color)',
+                  boxShadow: 'var(--shadow-premium)',
+                  overflow: 'hidden',
+                  background: '#ffffff',
+                  padding: '12px',
+                  transform: 'rotate(-1.5deg)',
+                  cursor: 'pointer'
+                }}
+                className="hero-image-frame"
+                >
+                  <div style={{
+                    width: '100%',
+                    height: '100%',
+                    borderRadius: '6px',
+                    overflow: 'hidden',
+                    position: 'relative'
+                  }}>
+                    <img 
+                      src="/images/hero_car_banner.png" 
+                      alt="Luxury Car lineup" 
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover'
+                      }}
+                    />
+                    <div style={{
+                      position: 'absolute',
+                      top: 0, left: 0, right: 0, bottom: 0,
+                      background: 'linear-gradient(to top, rgba(30, 37, 43, 0.2) 0%, transparent 60%)'
+                    }} />
+                  </div>
+                </div>
+
               </div>
             </div>
 

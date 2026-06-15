@@ -3,6 +3,26 @@ import ListingDetailModal from './ListingDetailModal';
 
 // Interactive SVG Visuals for luxury items - Adjusted for light theme
 export function AssetVisual({ type, animated = false }) {
+  const hasImageFile = ['toyota_supra', 'honda_nsx', 'suzuki_swift', 'mercedes_g63'].includes(type);
+  if (hasImageFile) {
+    return (
+      <div style={{ width: '100%', height: '100%', overflow: 'hidden' }}>
+        <img 
+          src={`/images/${type}.png`} 
+          alt={type.replace('_', ' ')} 
+          style={{ 
+            width: '100%', 
+            height: '100%', 
+            objectFit: 'cover',
+            display: 'block',
+            transition: 'transform 0.6s cubic-bezier(0.16, 1, 0.3, 1)' 
+          }} 
+          className="showroom-asset-image"
+        />
+      </div>
+    );
+  }
+
   const isPorsche = type === 'porsche';
   const isFerrari = type === 'ferrari';
   const isPenthouse = type === 'penthouse';
