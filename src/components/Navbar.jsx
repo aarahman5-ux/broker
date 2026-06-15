@@ -33,11 +33,11 @@ export default function Navbar({ activeTab, setActiveTab, unreadLeadsCount }) {
             width: '38px',
             height: '38px',
             borderRadius: '6px', /* Domira-style sharp corners */
-            background: 'linear-gradient(135deg, #b89d7c, #9c8362)',
+            background: 'linear-gradient(135deg, #f08787, #ffc7a7)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            boxShadow: '0 4px 10px rgba(184, 157, 124, 0.2)'
+            boxShadow: '0 4px 10px rgba(240, 135, 135, 0.25)'
           }}>
             <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M12 2L2 22h20L12 2zm0 4.8L17.8 18H6.2L12 6.8z" fill="#ffffff" />
@@ -50,7 +50,7 @@ export default function Navbar({ activeTab, setActiveTab, unreadLeadsCount }) {
               fontWeight: '800',
               fontSize: '1.25rem',
               letterSpacing: '1px',
-              background: 'linear-gradient(135deg, #1e252b 60%, #9c8362 100%)',
+              background: 'linear-gradient(135deg, #3e3536 60%, #f08787 100%)',
               WebkitBackgroundClip: 'text',
               WebkitTextFillColor: 'transparent'
             }}>

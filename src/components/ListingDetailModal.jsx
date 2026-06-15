@@ -157,8 +157,8 @@ export default function ListingDetailModal({ item, onClose, onInquireSubmit }) {
 
               {/* Monthly Payment Output */}
               <div style={{
-                background: 'rgba(184, 157, 124, 0.08)',
-                border: '1px solid rgba(184, 157, 124, 0.25)',
+                background: 'rgba(240, 135, 135, 0.08)',
+                border: '1px solid rgba(240, 135, 135, 0.25)',
                 padding: '16px',
                 borderRadius: '6px',
                 marginTop: '8px',

@@ -1,28 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
 
 :root {
-  --bg-primary: #f7f6f2; /* Warm linen/sand */
+  --bg-primary: #f8fab4; /* Pale Lemon Yellow from palette */
   --bg-secondary: #ffffff; /* Pure white */
   --bg-card: #ffffff;
-  --bg-card-hover: #faf9f6;
-  --border-color: rgba(30, 37, 43, 0.08); /* Soft thin borders */
-  --border-color-glow: rgba(184, 157, 124, 0.4);
+  --bg-card-hover: #fffdf5; /* Warm creamy hover state */
+  --border-color: rgba(62, 53, 54, 0.08); /* Soft warm borders */
+  --border-color-glow: rgba(240, 135, 135, 0.4);
   
-  --accent-gold: #a38562; /* Darker elegant warm bronze/gold */
-  --accent-gold-dark: #82694b;
-  --accent-indigo: #3a4750; /* Darker slate grey */
-  --accent-purple: #705f52; /* Darker warm taupe */
+  --accent-gold: #f08787; /* Coral Pink from palette */
+  --accent-gold-dark: #d67272; /* Darker Coral */
+  --accent-indigo: #3e3536; /* Warm slate chocolate */
+  --accent-purple: #d28b7a; /* Darker terracotta */
   
   --text-primary: #000000; /* Pure black */
-  --text-secondary: #3c4952; /* Dark charcoal slate */
-  --text-muted: #5e6b75; /* Readable medium slate */
+  --text-secondary: #3e3536; /* Warm slate chocolate */
+  --text-muted: #6e5e60; /* Soft readable brown slate */
   
   --font-sans: 'Manrope', sans-serif;
   --font-serif: 'Playfair Display', serif;
   
-  --shadow-premium: 0 20px 40px -15px rgba(30, 37, 43, 0.08);
-  --shadow-glow: 0 10px 30px rgba(184, 157, 124, 0.12);
-  --shadow-gold-glow: 0 15px 30px rgba(184, 157, 124, 0.2);
+  --shadow-premium: 0 20px 40px -15px rgba(62, 53, 54, 0.08);
+  --shadow-glow: 0 10px 30px rgba(240, 135, 135, 0.12);
+  --shadow-gold-glow: 0 15px 30px rgba(240, 135, 135, 0.2);
   
   --transition-smooth: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
   --transition-elastic: all 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -68,8 +68,8 @@ body {
   bottom: 0;
   z-index: -2;
   background: 
-    radial-gradient(circle at 10% 20%, rgba(184, 157, 124, 0.05) 0%, transparent 45%),
-    radial-gradient(circle at 90% 80%, rgba(74, 92, 104, 0.04) 0%, transparent 45%),
+    radial-gradient(circle at 10% 20%, rgba(240, 135, 135, 0.06) 0%, transparent 45%),
+    radial-gradient(circle at 90% 80%, rgba(255, 199, 167, 0.04) 0%, transparent 45%),
     var(--bg-primary);
   background-size: cover;
 }
@@ -82,10 +82,10 @@ body {
   right: 0;
   bottom: 0;
   background-image: 
-    linear-gradient(rgba(163, 133, 98, 0.05) 1.5px, transparent 1.5px),
-    linear-gradient(90deg, rgba(163, 133, 98, 0.05) 1.5px, transparent 1.5px),
-    linear-gradient(rgba(60, 73, 82, 0.02) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(60, 73, 82, 0.02) 1px, transparent 1px);
+    linear-gradient(rgba(240, 135, 135, 0.08) 1.5px, transparent 1.5px),
+    linear-gradient(90deg, rgba(240, 135, 135, 0.08) 1.5px, transparent 1.5px),
+    linear-gradient(rgba(62, 53, 54, 0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(62, 53, 54, 0.02) 1px, transparent 1px);
   background-size: 80px 80px, 80px 80px, 20px 20px, 20px 20px;
   mask-image: radial-gradient(circle at 50% 50%, black, transparent 90%);
   pointer-events: none;
@@ -105,14 +105,14 @@ body {
 }
 
 .glow-orb-1 {
-  background: radial-gradient(circle, #fceecb 0%, transparent 70%); /* Soft warm morning light */
+  background: radial-gradient(circle, #f08787 0%, transparent 70%); /* Soft Coral sunset leak */
   top: -150px;
   right: 15%;
   animation-duration: 22s;
 }
 
 .glow-orb-2 {
-  background: radial-gradient(circle, #eddcd2 0%, transparent 70%); /* Warm dust/sand */
+  background: radial-gradient(circle, #ffc7a7 0%, transparent 70%); /* Warm peach dust/sand glow */
   bottom: -150px;
   left: 15%;
   animation-duration: 28s;
@@ -120,7 +120,7 @@ body {
 }
 
 .glow-orb-3 {
-  background: radial-gradient(circle, rgba(184, 157, 124, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(254, 226, 173, 0.3) 0%, transparent 70%);
   top: 30%;
   left: 35%;
   width: 400px;
@@ -170,13 +170,13 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transition-smooth);
-  box-shadow: 0 4px 12px rgba(74, 92, 104, 0.15);
+  box-shadow: 0 4px 12px rgba(62, 53, 54, 0.15);
 }
 
 .btn-primary:hover {
-  background: #394852;
+  background: #2a2223;
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(74, 92, 104, 0.25);
+  box-shadow: 0 6px 16px rgba(62, 53, 54, 0.25);
 }
 
 .btn-gold {
@@ -194,13 +194,13 @@ body {
   border-radius: 6px;
   cursor: pointer;
   transition: var(--transition-smooth);
-  box-shadow: 0 4px 12px rgba(184, 157, 124, 0.2);
+  box-shadow: 0 4px 12px rgba(240, 135, 135, 0.2);
 }
 
 .btn-gold:hover {
   background: var(--accent-gold-dark);
   transform: translateY(-1px);
-  box-shadow: 0 6px 16px rgba(184, 157, 124, 0.35);
+  box-shadow: 0 6px 16px rgba(240, 135, 135, 0.35);
 }
 
 .btn-secondary {
@@ -221,8 +221,8 @@ body {
 }
 
 .btn-secondary:hover {
-  background: #faf9f6;
-  border-color: rgba(30, 37, 43, 0.15);
+  background: #fdfef2;
+  border-color: rgba(62, 53, 54, 0.15);
 }
 
 /* Animations */
@@ -327,7 +327,7 @@ body {
   position: relative;
   height: 220px;
   overflow: hidden;
-  background: #f1efe9;
+  background: #fee2ad;
 }
 
 .asset-card-image-placeholder {
@@ -494,7 +494,7 @@ body {
 .form-control:focus {
   outline: none;
   border-color: var(--accent-gold);
-  box-shadow: 0 0 0 3px rgba(184, 157, 124, 0.15);
+  box-shadow: 0 0 0 3px rgba(240, 135, 135, 0.15);
   background: #ffffff;
 }
 
@@ -537,7 +537,7 @@ body {
 }
 
 .dashboard-nav-item:hover, .dashboard-nav-item.active {
-  background: rgba(184, 157, 124, 0.1);
+  background: rgba(240, 135, 135, 0.1);
   color: var(--accent-gold-dark);
 }
 
@@ -606,7 +606,7 @@ body {
   position: absolute;
   top: 20px;
   right: 20px;
-  background: #f8f7f4;
+  background: #fee2ad;
   border: 1px solid var(--border-color);
   width: 36px;
   height: 36px;
@@ -621,7 +621,7 @@ body {
 }
 
 .modal-close-btn:hover {
-  background: #e6e3dd;
+  background: #ffc7a7;
   color: var(--text-primary);
   transform: rotate(90deg);
 }
@@ -672,7 +672,7 @@ body {
 }
 
 .lead-row:hover {
-  background: #faf9f6;
+  background: #fdfef2;
 }
 
 .badge {
@@ -690,7 +690,7 @@ body {
 }
 
 .badge-in-progress {
-  background: rgba(184, 157, 124, 0.15);
+  background: rgba(240, 135, 135, 0.15);
   color: var(--accent-gold-dark);
 }
 
